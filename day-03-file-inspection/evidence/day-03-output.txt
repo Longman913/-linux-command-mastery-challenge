@@ -1,0 +1,14 @@
+Script started on 2026-08-11 11:48:51+01:00 [COMMAND="wc /var/log/syslog; wc -l /var/log/syslog; file /var/log/syslog; stat /var/log/syslog" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+  1746  18921 220293 /var/log/syslog
+1746 /var/log/syslog
+/var/log/syslog: ASCII text, with very long lines (603)
+  File: /var/log/syslog
+  size: 220293    	Blocks: 432        IO Block: 4096   regular file
+Device: 8,48	Inode: 33557352    Links: 1
+Access: (0640/-rw-r-----)  Uid: (  100/  syslog)   Gid: (    4/     adm)
+Access: 2026-08-11 11:35:18.223007408 +0100
+Modify: 2026-08-11 11:35:04.911010930 +0100
+Change: 2026-08-11 11:35:04.911010930 +0100
+ Birth: 2026-08-10 10:11:50.199443799 +0100
+
+Script done on 2026-08-11 11:48:51+01:00 [COMMAND_EXIT_CODE="0"]
