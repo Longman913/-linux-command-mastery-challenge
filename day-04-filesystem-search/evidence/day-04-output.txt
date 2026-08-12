@@ -1,0 +1,58 @@
+Day 4 Filesystem Search Evidence
+
+1. Find .conf files under /etc:
+/etc/mke2fs.conf
+/etc/dbus-1/system.d/com.ubuntu.SoftwareProperties.conf
+/etc/security/limits.conf
+/etc/security/namespace.conf
+/etc/security/pam_env.conf
+/etc/security/capability.conf
+/etc/security/sepermit.conf
+/etc/security/group.conf
+/etc/security/limits.d/10-coredump-debian.conf
+/etc/security/faillock.conf
+/etc/security/access.conf
+/etc/security/pwhistory.conf
+/etc/security/time.conf
+/etc/deluser.conf
+/etc/gtk-3.0/im-multipress.conf
+/etc/ubuntu-advantage/uaclient.conf
+/etc/dhcpcd.conf
+/etc/fuse.conf
+/etc/logrotate.conf
+/etc/selinux/semanage.conf
+
+2. Files larger than 1MB under /var:
+/var/log/journal/80030dbb10814396918b10eb5803dcb4/system.journal
+/var/log/journal/80030dbb10814396918b10eb5803dcb4/user-1000.journal
+/var/log/journal/80030dbb10814396918b10eb5803dcb4/system@000658c1e0b8e6ce-a36b75f7313d5528.journal~
+/var/log/journal/80030dbb10814396918b10eb5803dcb4/user-1000@000658c1e0e32b8a-594181b605d5061c.journal~
+/var/cache/swcatalog/cache/C-os-catalog.xb
+/var/cache/debconf/templates.dat
+/var/cache/apt/srcpkgcache.bin
+/var/cache/apt/pkgcache.bin
+/var/lib/plocate/plocate.db
+/var/lib/command-not-found/commands.db
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_i18n_Translation-en
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_i18n_Translation-en
+/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_cnf_Commands-amd64
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_i18n_Translation-en
+/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_i18n_Translation-en
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_i18n_Translation-en
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_binary-amd64_Packages
+/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_binary-amd64_Packages
+/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_dep11_Components-amd64.yml.gz
+
+3. Total disk usage of /home:
+848K	/home
+
+4. Root filesystem free space:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.6G  955G   1% /
