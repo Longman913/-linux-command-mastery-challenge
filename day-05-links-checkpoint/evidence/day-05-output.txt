@@ -1,0 +1,19 @@
+total 20
+-rw-r--r-- 1 longman longman  416 Aug 16 18:18 README.md
+-rw-r--r-- 1 longman longman   77 Aug 16 18:18 commands.md
+drwxr-xr-x 2 longman longman 4096 Aug 16 18:18 evidence
+-rw-r--r-- 2 longman longman   25 Aug 16 16:39 hardlink.txt
+lrwxrwxrwx 1 longman longman   10 Aug 16 16:47 hosts-link -> /etc/hosts
+-rw-r--r-- 2 longman longman   25 Aug 16 16:39 original.txt
+.
+├── README.md
+├── commands.md
+├── evidence
+│   └── day-05-output.txt
+├── hardlink.txt
+├── hosts-link -> /etc/hosts
+└── original.txt
+
+2 directories, 6 files
+/etc/hosts
+/etc/hosts
