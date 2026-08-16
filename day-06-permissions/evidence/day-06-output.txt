@@ -1,0 +1,5 @@
+-rwxr-xr-x 1 longman longman 36 Aug 16 19:05 script.sh
+total 4
+-rwxr-xr-x 1 longman longman 36 Aug 16 19:08 script.sh
+0022
+-rwxr-xr-x longman longman
