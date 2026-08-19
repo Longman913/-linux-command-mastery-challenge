@@ -1,0 +1,28 @@
+=== Day 8 Privilege Escalation & Identity ===
+
+=== sudo -l ===
+sudo -l
+
+=== sudo -u root ===
+sudo -u root whoami
+Result: root
+
+=== whoami ===
+whoami
+Result: longman
+
+=== id ===
+id
+Result: UID, GID and group memberships displayed.
+
+=== su ===
+su
+Result: Authentication failure
+
+=== su - ===
+su -
+Result: Authentication failure
+
+=== visudo ===
+sudo visudo
+Result: sudoers unchanged
