@@ -1,0 +1,64 @@
+DAY 9 — INTEGRITY, ENCRYPTION & FIREWALLING
+
+1. SHA-256 CHECKSUM
+Command:
+sha256sum download.txt
+
+Result:
+b23d3e0a5af3066f53567ce8932d648f670f957fa0bac7755e2ff21fb577ac3
+
+2. GPG KEY GENERATION
+Command:
+gpg --gen-key
+
+Result:
+Public and secret key successfully created.
+
+3. GPG ENCRYPTION
+Command:
+gpg --encrypt --recipient "alaroidrees@gmail.com" download.txt
+
+Result:
+download.txt.gpg created successfully.
+
+4. FILE IMMUTABILITY
+Command:
+sudo chattr +i download.txt
+
+Verification:
+lsattr download.txt
+
+Result:
+----i---------------- download.txt
+
+5. IMMUTABILITY TEST
+Command:
+rm download.txt
+
+Result:
+Operation not permitted
+
+6. GPG DECRYPTION
+Command:
+gpg --decrypt --output decrypted.txt download.txt.gpg
+
+Result:
+File decrypted successfully.
+
+7. DECRYPTED FILE VERIFICATION
+Command:
+cat decrypted.txt
+
+Result:
+Day 9 integrity practice
+
+8. FIREWALL
+Commands:
+sudo ufw allow 443/tcp
+sudo ufw enable
+sudo ufw status
+
+Result:
+Status: active
+22/tcp ALLOW
+443/tcp ALLOW
