@@ -1,0 +1,33 @@
+DAY 10 — SECURITY CHECKPOINT & AUDIT
+
+User currently logged in:
+w
+
+Current user:
+who
+
+User groups:
+groups
+
+Password status:
+passwd --status longman
+
+Password aging:
+chage -l longman
+
+Recent login history:
+last
+
+Failed login attempts:
+lastb
+
+SUID files found:
+sudo find / -perm /4000 2>/dev/null
+
+Sudo commands executed:
+history | grep sudo
+
+NOTES:
+The audit checks currently logged-in users, recent login activity,
+failed login attempts, password configuration, account aging,
+SUID binaries, and sudo activity.

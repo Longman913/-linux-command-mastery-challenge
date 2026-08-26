@@ -1,0 +1,27 @@
+  156  sudo apt install plocate
+  157  sudo apt update
+  158  sudo apt install plocate
+  160  sudo updatedb
+  232  sudo apt install tree
+  379  sudo chown root project.txt
+  380  sudo chown root shared-project/project.txt
+  382  sudo chown longman:longman shared-project/project.txt
+  384  sudo chown -R longman:longman shared-project
+  386  sudo chgrp longman shared-project
+  397  sudo find / -perm /4000
+  398  sudo find / -perm /4000 > evidence-suid.txt
+  401  sudo apt update
+  402  sudo apt install acl
+  407  { echo "=== Shared Project Permissions ==="; ls -ld shared-project; echo; echo "=== Files ==="; ls -l shared-project; echo; echo "=== SUID Audit ==="; sudo find / -perm /4000 2>/dev/null; } > day-07-output.txt
+  434  sudo whoami
+  436  sudo -i
+  438  sudo cat /etc/shadow
+  439  sudo -l
+  440  sudo -u root whoami
+  442  sudo -u root whoami
+  445  sudo -u root whoami
+  456  sudo find / -perm /4000 2>/dev/null
+  457  sudo find / -perm /4000 2>/dev/null > suid-audit.txt
+  466  sudo find / -perm /4000 2>/dev/null > suid-audit.txt
+  480  history | grep sudo
+  481  history | grep sudo > sudo-history.txt
