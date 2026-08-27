@@ -1,0 +1,10 @@
+=== Day 11 User Management ===
+
+=== User Creation ===
+User was successfully removed after testing
+
+=== Secondary Group ===
+linuxlearners:x:1001:
+
+=== Home Directory ===
+Home directory removed successfully
