@@ -1,0 +1,27 @@
+=== Day 12 Groups & Access Circles Evidence ===
+
+1. Created group:
+sudo groupadd devs
+
+2. Created users:
+sudo useradd -m devuser1
+sudo useradd -m devuser2
+
+3. Added both users to devs:
+sudo usermod -aG devs devuser1
+sudo usermod -aG devs devuser2
+
+4. Confirmed membership:
+getent group devs
+
+5. Removed devuser2:
+sudo gpasswd -d devuser2 devs
+
+6. Confirmed remaining membership:
+getent group devs
+
+7. Deleted the devs group:
+sudo groupdel devs
+
+8. Final verification:
+getent group devs
