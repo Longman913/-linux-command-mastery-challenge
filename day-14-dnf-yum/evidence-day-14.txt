@@ -1,0 +1,30 @@
+DAY 14 - DNF/YUM & Alternative Installs
+
+System:
+Amazon Linux 2023
+
+Package manager:
+DNF 4.14.0
+
+Commands completed:
+1. cat /etc/os-release
+2. dnf --version
+3. dnf repolist
+4. dnf update -y
+5. dnf search tree
+6. dnf info tree
+7. dnf install tree -y
+8. tree --version
+9. rpm -qa | grep '^tree'
+10. dnf remove tree -y
+11. rpm -qa | grep '^tree'
+12. tree --version
+
+Result:
+Successfully installed tree using DNF.
+Verified the installed package using RPM.
+Successfully removed tree using DNF.
+Confirmed that tree was no longer available after removal.
+
+Comparison:
+Ubuntu uses APT/DPKG while Amazon Linux uses DNF/RPM.
