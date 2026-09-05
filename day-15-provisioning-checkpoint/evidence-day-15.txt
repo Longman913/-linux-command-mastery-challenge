@@ -1,0 +1,58 @@
+DAY 15 — USERS & PACKAGES CHECKPOINT
+
+USER/GROUP PROVISIONING
+-----------------------
+Created group:
+sudo groupadd devteam
+
+Created user:
+sudo useradd -m -s /bin/bash -G devteam teamuser
+
+Set password:
+sudo passwd teamuser
+
+USER VERIFICATION
+-----------------
+id teamuser
+
+Result:
+uid=1003(teamuser) gid=1003(teamuser) groups=1003(teamuser),1006(devteam)
+
+groups teamuser
+
+Result:
+teamuser : teamuser devteam
+
+getent passwd teamuser
+
+Result:
+teamuser:x:1003:1003::/home/teamuser:/bin/bash
+
+PACKAGE MANAGEMENT
+------------------
+apt list --installed
+apt list --upgradable
+sudo apt update
+sudo apt install -y tree curl vim
+dpkg -l | grep -E 'tree|curl|vim'
+
+PACKAGE INSTALLATION RESULT
+---------------------------
+tree was already the newest version.
+curl was already the newest version.
+vim was already the newest version.
+
+APT UPDATE RESULT
+-----------------
+Package information was successfully updated.
+83 packages were available for upgrade.
+
+TOOLS VERIFIED
+--------------
+tree
+curl
+vim
+
+SUMMARY
+-------
+Day 15 user provisioning and package management tasks were completed.
