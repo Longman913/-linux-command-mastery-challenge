@@ -1,0 +1,60 @@
+DAY 16 — ENVIRONMENT VARIABLES
+
+ENVIRONMENT CHECK
+-----------------
+printenv
+printenv HOME
+env
+
+TEMPORARY VARIABLE
+------------------
+Created:
+export DAY16="Linux Environment Variables"
+
+Verified:
+echo $DAY16
+env | grep DAY16
+
+Removed:
+unset DAY16
+
+Verified removal:
+echo $DAY16
+env | grep DAY16
+
+PATH PRACTICE
+-------------
+Checked current PATH:
+echo $PATH
+
+Created:
+~/day16-bin/day16-test
+
+Script:
+#!/bin/bash
+echo "Day 16 PATH test successful"
+
+Made executable:
+chmod +x ~/day16-bin/day16-test
+
+Added directory to current PATH:
+export PATH="$PATH:$HOME/day16-bin"
+
+Verified:
+which day16-test
+
+Executed:
+day16-test
+
+Result:
+Day 16 PATH test successful
+
+SYSTEM ENVIRONMENT
+------------------
+cat /etc/environment
+
+SUMMARY
+-------
+Environment variables were created, checked, removed, and modified.
+A custom directory was added to PATH for the current shell session,
+and the test script was successfully located and executed.
