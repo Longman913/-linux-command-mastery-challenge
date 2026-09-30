@@ -1,0 +1,69 @@
+DAY 17 — PERSISTING CONFIGURATION
+
+COMMANDS PRACTICED
+------------------
+nano ~/.bashrc
+source ~/.bashrc
+cat ~/.bash_profile
+sudo nano /etc/environment
+sudo nano /etc/bash.bashrc
+alias
+unalias
+type
+which
+whereis
+
+PERMANENT ENVIRONMENT VARIABLE
+------------------------------
+Added to ~/.bashrc:
+
+export DAY17_MESSAGE="Linux configuration persists"
+
+Reloaded with:
+
+source ~/.bashrc
+
+Verified with:
+
+echo $DAY17_MESSAGE
+
+Result:
+Linux configuration persists
+
+CUSTOM ALIAS
+------------
+Added to ~/.bashrc:
+
+alias ll='ls -lah'
+
+Verified by running:
+
+ll
+
+FRESH BASH SESSION
+------------------
+Started a new Bash session with:
+
+bash
+
+The DAY17_MESSAGE variable and ll alias remained available.
+
+Exited with:
+
+exit
+
+SYSTEM CONFIGURATION
+--------------------
+Inspected:
+
+cat /etc/environment
+
+Also accessed:
+
+sudo nano /etc/bash.bashrc
+
+SUMMARY
+-------
+Day 17 demonstrated persistent Bash configuration using .bashrc.
+An environment variable and custom alias were created, reloaded,
+tested, and confirmed in a fresh Bash session.
