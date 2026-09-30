@@ -1,0 +1,89 @@
+DAY 18 — VIM FUNDAMENTALS
+
+FILE CREATED
+------------
+practice.txt
+
+COMMAND USED:
+vim practice.txt
+
+INSERT MODE
+-----------
+Command/action:
+i
+
+Three lines entered:
+
+Linux Command Mastery
+Learning Vim Fundamentals
+Day 18 Practice
+
+SAVE
+----
+Command:
+:w
+
+EXIT
+----
+Command:
+:q
+
+REOPENED FILE
+-------------
+Command:
+vim practice.txt
+
+DELETE
+------
+Action:
+Moved to the middle line and used:
+
+dd
+
+UNDO
+----
+Action:
+Used:
+
+u
+
+The deleted line was restored.
+
+REDO
+----
+Action:
+Used:
+
+Ctrl+r
+
+The deletion was reapplied.
+
+RESTORED
+--------
+Action:
+Used:
+
+u
+
+The deleted line was restored again.
+
+FINAL SAVE AND EXIT
+-------------------
+Command:
+
+:wq
+
+FINAL VERIFICATION
+------------------
+Command:
+
+cat practice.txt
+
+FINAL RESULT
+------------
+The practice file was saved and verified successfully.
+
+SUMMARY
+-------
+Day 18 covered the basic Vim workflow, including insert mode,
+normal mode, saving, quitting, deleting lines, undo, and redo.
