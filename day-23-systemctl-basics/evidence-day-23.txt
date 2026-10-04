@@ -1,0 +1,108 @@
+DAY 23 — INIT SYSTEMS & SYSTEMCTL BASICS
+
+SERVICE USED
+------------
+
+cron
+
+
+CHECK SERVICE STATUS
+--------------------
+
+systemctl status cron
+
+
+STOP SERVICE
+------------
+
+sudo systemctl stop cron
+
+
+CONFIRM INACTIVE
+----------------
+
+systemctl is-active cron
+
+Expected:
+inactive
+
+
+START SERVICE
+-------------
+
+sudo systemctl start cron
+
+systemctl is-active cron
+
+Expected:
+active
+
+
+RESTART SERVICE
+---------------
+
+sudo systemctl restart cron
+
+systemctl is-active cron
+
+Expected:
+active
+
+
+RELOAD SERVICE
+--------------
+
+sudo systemctl reload cron
+
+
+DISABLE SERVICE
+---------------
+
+sudo systemctl disable cron
+
+systemctl is-enabled cron
+
+Expected:
+disabled
+
+
+ENABLE SERVICE
+--------------
+
+sudo systemctl enable cron
+
+systemctl is-enabled cron
+
+Expected:
+enabled
+
+
+ENABLE AND START
+----------------
+
+sudo systemctl enable --now cron
+
+systemctl is-active cron
+
+Expected:
+active
+
+systemctl is-enabled cron
+
+Expected:
+enabled
+
+
+FINAL STATUS
+------------
+
+systemctl status cron
+
+
+SUMMARY
+-------
+
+Day 23 focused on Linux service management using systemctl.
+I practiced starting, stopping, restarting, reloading,
+enabling, disabling, and checking the status of a systemd
+service.
