@@ -1,0 +1,48 @@
+DAY 19 — VIM NAVIGATION & SEARCH/REPLACE
+
+FILE:
+config.txt
+
+FILE SIZE:
+50 lines
+
+NAVIGATION
+----------
+gg
+G
+:10
+
+SEARCH
+------
+/server
+?server
+n
+N
+
+EDITING
+-------
+dw
+x
+o
+O
+zz
+
+GLOBAL REPLACEMENT
+------------------
+:%s/server/node/g
+
+VERIFICATION
+------------
+wc -l config.txt
+grep -c "node" config.txt
+
+RESULT
+------
+The 50-line configuration file was successfully navigated and edited
+using Vim. Search and search-navigation commands were practiced, and
+the occurrences of "server" were replaced with "node".
+
+SUMMARY
+-------
+Day 19 strengthened Vim navigation, searching, editing, and global
+search-and-replace skills.
