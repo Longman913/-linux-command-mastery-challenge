@@ -1,0 +1,65 @@
+DAY 20 — TEXT PROCESSING & PIPES CHECKPOINT
+
+RAW LOG
+-------
+Created:
+app.log
+
+SEARCH
+------
+grep "ERROR" app.log
+
+CASE-INSENSITIVE SEARCH
+-----------------------
+grep -i "error" app.log
+
+RECURSIVE SEARCH
+----------------
+grep -r "ERROR" .
+
+SORTING
+-------
+grep -i "error" app.log | sort
+
+NUMERIC SORTING
+---------------
+sort -n numbers.txt
+
+DUPLICATE REMOVAL
+-----------------
+grep -i "error" app.log | sort | uniq
+
+FIELD EXTRACTION
+----------------
+cut -d':' -f1 /etc/passwd
+
+AWK
+---
+awk '{print $1}' app.log
+
+SED
+---
+sed 's/INFO/NOTICE/g' app-sed.log
+
+MAIN PIPELINE
+-------------
+grep -i "error" app.log | awk '{print $1}' | sort | uniq
+
+PIPELINE BREAKDOWN
+------------------
+grep -i "error"
+Filters error entries.
+
+awk '{print $1}'
+Extracts the timestamp field.
+
+sort
+Sorts the timestamps.
+
+uniq
+Removes duplicate timestamps.
+
+SUMMARY
+-------
+Day 20 demonstrated how Linux text-processing commands can be chained
+together using pipes to filter, extract, sort, and deduplicate data.
