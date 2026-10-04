@@ -1,0 +1,61 @@
+DAY 22 — CONTROLLING PROCESSES WITH SIGNALS
+
+KILL
+----
+sleep 300 &
+pgrep -a sleep
+kill <PID>
+
+KILL -9
+--------
+sleep 300 &
+pgrep -a sleep
+kill -9 <PID>
+
+SIGHUP
+------
+sleep 300 &
+kill -HUP <PID>
+
+KILLALL
+-------
+sleep 300 &
+sleep 300 &
+killall sleep
+
+PKILL
+-----
+sleep 300 &
+pkill sleep
+
+SUSPEND AND RESUME
+------------------
+sleep 300
+Ctrl+Z
+jobs
+bg %1
+jobs
+fg %1
+Ctrl+C
+
+NOHUP
+-----
+nohup sleep 300 > nohup-output.txt 2>&1 &
+jobs
+pgrep -a sleep
+
+DISOWN
+------
+sleep 300 &
+jobs
+disown %1
+jobs
+
+CLEANUP
+-------
+pgrep -a sleep
+
+SUMMARY
+-------
+Day 22 demonstrated Linux signals, process termination, job
+suspension, foreground/background control, nohup, and disown.
