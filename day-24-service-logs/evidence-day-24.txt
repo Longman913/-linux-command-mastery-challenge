@@ -1,0 +1,98 @@
+DAY 24 — DEEPER SERVICE MANAGEMENT & LOGS
+
+LIST SERVICES
+-------------
+
+systemctl list-units --type=service --no-pager
+
+
+FAILED SERVICES
+---------------
+
+systemctl list-units --state=failed --no-pager
+
+
+SYSTEMD CONFIGURATION
+---------------------
+
+sudo systemctl daemon-reload
+
+
+SYSTEM JOURNAL
+--------------
+
+journalctl --no-pager
+
+journalctl -n 20 --no-pager
+
+
+FOLLOW JOURNAL
+--------------
+
+journalctl -f
+
+Exited with:
+Ctrl+C
+
+
+SERVICE LOGS
+------------
+
+systemctl status cron --no-pager
+
+journalctl -u cron --no-pager
+
+
+TODAY'S SERVICE LOGS
+--------------------
+
+journalctl -u cron --since today --no-pager
+
+
+ERROR LOGS
+----------
+
+journalctl -u cron --since today -p err --no-pager
+
+
+FOLLOW SERVICE LOGS
+-------------------
+
+journalctl -u cron -f
+
+Exited with:
+Ctrl+C
+
+
+SYSTEM LOG
+----------
+
+tail -f /var/log/syslog
+
+Exited with:
+Ctrl+C
+
+If unavailable in WSL:
+Documented that the traditional syslog file was not available.
+
+
+AUTHENTICATION LOG
+------------------
+
+tail -f /var/log/auth.log
+
+Exited with:
+Ctrl+C
+
+If unavailable in WSL:
+Documented that the traditional auth.log file was not available.
+
+
+SUMMARY
+-------
+
+Day 24 focused on deeper service management and Linux logs.
+I practiced identifying failed services, reloading systemd
+configuration, viewing journal logs, filtering logs by
+service, time, and error priority, and following logs
+in real time.
