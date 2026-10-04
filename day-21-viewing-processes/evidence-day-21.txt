@@ -1,0 +1,95 @@
+DAY 21 — VIEWING PROCESSES
+
+PROCESS LISTING
+---------------
+
+ps aux
+
+ps -ef
+
+ps -u "$USER"
+
+
+PROCESS MONITORING
+------------------
+
+top
+
+
+HTOP
+----
+
+Attempted installation:
+
+sudo apt install htop
+
+Result:
+Installation could not be completed because the Ubuntu repository
+returned a remote/cache error.
+
+
+PROCESS SEARCH
+--------------
+
+pgrep -a bash
+
+Verified process information using:
+
+ps -p <ACTUAL_PID> -f
+
+
+PROCESS TREE
+------------
+
+pstree -p
+
+
+NETWORK PROCESSES
+-----------------
+
+sudo lsof -i
+
+
+PORT 80
+-------
+
+sudo lsof -i :80
+
+
+BACKGROUND JOBS
+---------------
+
+sleep 60 &
+
+jobs
+
+fg
+
+Ctrl+C
+
+
+PROCESS PRIORITY
+----------------
+
+nice -n 10 sleep 30 &
+
+ps -o pid,ni,comm -p <ACTUAL_PID>
+
+renice 15 -p <ACTUAL_PID>
+
+ps -o pid,ni,comm -p <ACTUAL_PID>
+
+
+CLEANUP
+-------
+
+pgrep -a sleep
+
+
+SUMMARY
+-------
+
+Day 21 focused on viewing and managing Linux processes. I practiced
+process listing, process searching, process monitoring, process
+hierarchy inspection, network process identification, shell jobs,
+and process priority management using nice and renice.
