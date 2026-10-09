@@ -1,0 +1,56 @@
+DAY 25 — PROCESS & SERVICE CHECKPOINT
+
+PROCESS SEARCH
+--------------
+ps aux | grep '[b]ash'
+
+SERVICE STATUS
+--------------
+systemctl status cron --no-pager
+
+SERVICE LOGS
+------------
+journalctl -u cron --since today --no-pager
+
+PROCESS CHECK
+-------------
+sleep 300 &
+pid=$!
+echo "Test PID: $pid"
+kill -0 "$pid" && echo "Process exists and is accessible"
+kill "$pid"
+
+SYSTEM UPTIME
+-------------
+uptime
+
+MEMORY
+------
+free -h
+
+VIRTUAL MEMORY
+--------------
+vmstat
+vmstat 1 5
+
+DISK I/O STATISTICS
+-------------------
+iostat
+
+LIVE MEMORY MONITORING
+----------------------
+watch -n 2 free -h
+
+PROCESS MONITORING
+------------------
+top
+
+ENVIRONMENT NOTES
+-----------------
+Record any commands that failed because a package, service,
+log source, or systemd feature was unavailable in WSL.
+
+SUMMARY
+-------
+Day 25 focused on combining process, service, log, and resource
+checks into a basic operational report.
