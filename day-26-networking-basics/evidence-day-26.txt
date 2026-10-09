@@ -1,0 +1,58 @@
+DAY 26 — NETWORKING BASICS
+
+NETWORK INTERFACES
+------------------
+ip a
+ip -4 addr
+
+ROUTING TABLE
+-------------
+ip route
+ip route get 1.1.1.1
+
+CONNECTIVITY TESTS
+------------------
+ping -c 4 1.1.1.1
+ping -c 4 example.com
+
+CURL REQUEST
+------------
+curl -L --max-time 15 https://example.com
+
+HTTP HEADERS
+------------
+curl -I --max-time 15 https://example.com
+
+WGET DOWNLOAD
+-------------
+wget -O example-wget.html https://example.com
+
+LISTENING PORTS
+---------------
+netstat -tulnp
+ss -tulnp
+
+HOSTNAME
+--------
+hostname
+hostname -I
+
+HOSTNAME CONFIGURATION
+----------------------
+hostnamectl
+
+RESULTS
+-------
+Record the actual interface, IP address, default gateway,
+connectivity results, HTTP response, download result,
+and listening ports.
+
+ENVIRONMENT NOTES
+-----------------
+Record any unavailable commands, permission errors,
+network restrictions, or WSL-specific limitations.
+
+SUMMARY
+-------
+Day 26 focused on network interfaces, routing, connectivity,
+HTTP requests, downloads, and listening socket inspection.
