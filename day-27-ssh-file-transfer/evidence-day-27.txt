@@ -1,0 +1,49 @@
+DAY 27 — REMOTE ACCESS & FILE TRANSFER
+
+SSH VERSION
+-----------
+ssh -V
+
+SSH TOOL AVAILABILITY
+---------------------
+command -v ssh
+command -v ssh-keygen
+command -v scp
+command -v sftp
+command -v rsync
+
+SSH KEYS
+--------
+ls -la ~/.ssh
+ssh-keygen -t ed25519 -f ~/.ssh/day27_ed25519 -C "day27-linux-challenge"
+ssh-keygen -lf ~/.ssh/day27_ed25519.pub
+
+FILE TRANSFER TEST
+------------------
+printf 'Day 27 secure file transfer practice\n' > transfer-test.txt
+mkdir -p rsync-destination
+rsync -av transfer-test.txt rsync-destination/
+cat rsync-destination/transfer-test.txt
+
+SSH CONFIGURATION
+-----------------
+nano ~/.ssh/config
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/config
+chmod 600 ~/.ssh/day27_ed25519
+chmod 644 ~/.ssh/day27_ed25519.pub
+ssh -G day27-example | head -20
+
+REMOTE TRANSFER
+---------------
+Record the remote host and successful results if an authorized
+server was available. Otherwise, mark remote exercises pending.
+
+SECURITY
+--------
+Private keys must remain private and must not be committed to Git.
+
+SUMMARY
+-------
+Day 27 focused on SSH keys, secure client configuration,
+and secure file-transfer tools.
