@@ -1,0 +1,67 @@
+DAY 30 — CAPSTONE
+
+HEALTH CHECK
+------------
+bash -n health-check.sh
+./health-check.sh
+
+SYSTEM INFORMATION
+------------------
+hostname
+whoami
+uname -r
+df -h
+free -h
+ip -brief address
+ps -eo pid,comm,%cpu,%mem --sort=-%cpu
+
+SERVICE AND JOURNAL CHECKS
+--------------------------
+systemctl is-system-running
+systemctl --failed --no-pager
+journalctl -n 10 --no-pager
+
+REMOTE ACCESS
+-------------
+ssh username@remote-host 'hostname; uptime; df -h'
+scp health-check.sh username@remote-host:/tmp/health-check.sh
+
+PERMISSIONS
+-----------
+chmod 750 deployment-test/health-check.sh
+ls -l deployment-test/health-check.sh
+stat -c '%U:%G %a %n' deployment-test/health-check.sh
+
+LOG PROCESSING
+--------------
+grep -i "error" sample.log
+awk '{print $1, $2, $3}' sample.log
+sed 's/ERROR/ALERT/g' sample.log
+grep -ci "error" sample.log
+
+FILE DISCOVERY
+--------------
+find . -type f
+find . -type f -name '*.log'
+
+SECURITY REVIEW
+---------------
+who
+id
+history
+last
+
+AUTOMATION
+----------
+command -v crontab
+crontab -l
+
+RESULTS
+-------
+Record actual outputs and report filenames.
+Mark unsupported remote or systemd operations as pending.
+
+SUMMARY
+-------
+The capstone combined system monitoring, permissions,
+log processing, file discovery, networking, and security review.

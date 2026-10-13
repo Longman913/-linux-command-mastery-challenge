@@ -1,0 +1,63 @@
+[2026-10-13 15:53:16] Starting Linux health check
+[2026-10-13 15:53:16] Hostname: LAPTOP-QDHHK4L2
+[2026-10-13 15:53:16] Current user: longman
+[2026-10-13 15:53:16] Current directory: /home/longman/linux-command-mastery-challenge/day-30-capstone
+[2026-10-13 15:53:16] Disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         476G  195G  282G  41% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.5G  954G   1% /
+none            1.9G  316K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.8M  1.9G   1% /init
+none            1.9G  560K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   80K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   80K  1.9G   1% /mnt/wslg/doc
+C:\             476G  195G  282G  41% /mnt/c
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.9G     0  1.9G   0% /tmp
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           374M   12K  374M   1% /run/user/1000
+[2026-10-13 15:53:16] Memory:
+               total        used        free      shared  buff/cache   available
+Mem:           3.6Gi       507Mi       2.7Gi       3.8Mi       538Mi       3.2Gi
+Swap:          1.0Gi          0B       1.0Gi
+[2026-10-13 15:53:16] Filesystem usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  2.5G  954G   1% /
+[2026-10-13 15:53:16] Network addresses:
+lo               UNKNOWN        127.0.0.1/8 10.255.255.254/32 ::1/128 
+eth0             UP             172.28.86.7/20 fe80::215:5dff:feb3:fe2/64 
+docker0          DOWN           172.17.0.1/16 
+[2026-10-13 15:53:16] Current processes:
+    PID COMMAND         %CPU %MEM
+   7143 health-check.sh 38.8  0.0
+    318 containerd       0.3  1.1
+     94 systemd-udevd    0.2  0.3
+    392 dockerd          0.1  1.9
+      1 systemd          0.1  0.4
+     52 systemd-journal  0.0  0.4
+      2 init-systemd(Ub  0.0  0.0
+    699 systemd          0.0  0.3
+    339 chronyd          0.0  0.2
+[2026-10-13 15:53:16] Service manager:
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+[2026-10-13 15:53:16] Recent system journal:
+Oct 13 15:42:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/alaro/.ubuntupro/.address": open /mnt/c/Users/alaro/.ubuntupro/.address: no such file or directory
+Oct 13 15:43:47 LAPTOP-QDHHK4L2 crontab[6704]: (longman) END EDIT (longman)
+Oct 13 15:43:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/alaro/.ubuntupro/.address": open /mnt/c/Users/alaro/.ubuntupro/.address: no such file or directory
+Oct 13 15:43:57 LAPTOP-QDHHK4L2 longman[6752]: Day 29 Linux challenge test
+Oct 13 15:44:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/alaro/.ubuntupro/.address": open /mnt/c/Users/alaro/.ubuntupro/.address: no such file or directory
+Oct 13 15:45:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/alaro/.ubuntupro/.address": open /mnt/c/Users/alaro/.ubuntupro/.address: no such file or directory
+Oct 13 15:46:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/alaro/.ubuntupro/.address": open /mnt/c/Users/alaro/.ubuntupro/.address: no such file or directory
+Oct 13 15:46:52 LAPTOP-QDHHK4L2 wsl-pro-service[6542]: WARNING Exiting after <nil>: check if the Windows agent is installed and running.
+Oct 13 15:46:52 LAPTOP-QDHHK4L2 systemd[1]: wsl-pro.service: Deactivated successfully.
+Oct 13 15:46:52 LAPTOP-QDHHK4L2 systemd[1]: wsl-pro.service: Consumed 2.662s CPU time over 31min 6.970s wall clock time, 37.8M memory peak.
+[2026-10-13 15:53:16] Health check finished
+[2026-10-13 15:53:16] Report saved to health-report-20261013-155316.log
