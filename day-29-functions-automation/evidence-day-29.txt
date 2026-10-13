@@ -1,0 +1,52 @@
+DAY 29 — FUNCTIONS, ARGUMENTS & AUTOMATION
+
+FUNCTIONS
+---------
+./function-demo.sh
+./function-demo.sh Amina
+
+ARGUMENTS
+---------
+./arguments.sh nginx 8080
+./arguments.sh "web service" "port 8080"
+
+EXIT CODES
+----------
+true
+echo $?
+
+false
+echo $?
+
+TRAP
+----
+./trap-demo.sh
+
+NOHUP
+-----
+nohup bash -c 'echo "Day 29 background test"; sleep 5' > nohup-test.log 2>&1 &
+jobs
+cat nohup-test.log
+
+CRON
+----
+command -v crontab
+crontab -l
+
+LOGGER
+------
+logger "Day 29 Linux challenge test"
+
+SERVICE CHECK
+-------------
+./service-check.sh
+
+RESULTS
+-------
+Record the actual outputs and whether cron and systemd
+were available in the WSL environment.
+
+SUMMARY
+-------
+Day 29 covered functions, arguments, exit codes, traps,
+background execution, logging, and automation.
